@@ -4,7 +4,7 @@
 
 ## 1 Executive decision
 
-IntentPair was designed to help an SEO writer decide whether two similar keywords should be served by one page or two. The project tested whether a low-cost LLM could replace most five-minute manual SERP comparisons while routing uncertain cases to a writer. The system should **not** be deployed as an unconditional classifier. It missed both its pre-specified technical target and its business target:
+I designed IntentPair to help an SEO writer decide whether two similar keywords should be served by one page or two. I tested whether a low-cost LLM could replace most five-minute manual SERP comparisons while routing uncertain cases to a writer. Based on my results, I should **not** deploy the system as an unconditional classifier. It missed both my pre-specified technical target and my business target:
 
 | Measure | Target in the Problem Statement | Actual result | Outcome |
 |---|---:|---:|---|
@@ -14,13 +14,13 @@ IntentPair was designed to help an SEO writer decide whether two similar keyword
 | Manual effort per 100 pairs | About 2.1 hours | 3.13 hours | Not met |
 | Estimated evaluation-run LLM cost | Below $0.10 | About $0.05 | Met |
 
-The tuned lexical rule scored 0.591 macro-F1, compared with 0.438 for the final LLM design. The LLM nevertheless produced one potentially useful signal: among the 91 test pairs with definite ground truth, its answered cases had a 3.5% forced-choice error rate, while its abstained cases would have been wrong 41.2% of the time. This 11.7× error lift supports a limited selective-review pilot, but not automatic production deployment.
+My tuned lexical rule scored 0.591 macro-F1, compared with 0.438 for my final LLM design. I nevertheless found one potentially useful signal: among the 91 test pairs with definite ground truth, answered cases had a 3.5% forced-choice error rate, while abstained cases would have been wrong 41.2% of the time. I interpret this 11.7× error lift as support for a limited selective-review pilot, but not automatic production deployment.
 
-My decision is therefore to retain IntentPair as an experimental decision-support tool. A safer pilot should automatically accept only high-confidence Different decisions, require writer confirmation for every Same decision, and route Uncertain decisions to full manual review. Deployment should proceed only if a new holdout confirms the error rate and measured labor savings remain positive after content-error costs.
+My decision is therefore to retain IntentPair as an experimental decision-support tool. In a safer pilot, I would automatically accept only high-confidence Different decisions, require writer confirmation for every Same decision, and route Uncertain decisions to full manual review. I would proceed beyond the pilot only if a new holdout confirms the error rate and measured labor savings remain positive after content-error costs.
 
 ## 2 Business problem and current workflow
 
-The primary user is an SEO writer in a B2B SaaS business without a dedicated SERP-clustering budget. The writer reviews approximately 40 pre-grouped keyword sets, represented in this analysis as about 100 pair decisions per month. For each pair, the writer must decide whether one page can rank for both keywords or whether separate pages are required.
+I define the primary user as an SEO writer in a B2B SaaS business without a dedicated SERP-clustering budget. The writer reviews approximately 40 pre-grouped keyword sets, which I represent in this analysis as about 100 pair decisions per month. For each pair, the writer must decide whether one page can rank for both keywords or whether separate pages are required.
 
 The current process is a manual Google comparison:
 
@@ -33,11 +33,11 @@ At five minutes per pair, 100 decisions require approximately 8.33 hours each mo
 - A **wrong merge** places two different intents on one page. It can require a rewrite and may lose ranking opportunities. This is the higher-risk, less visible error.
 - A **wrong split** creates an unnecessary article and may cause keyword cannibalisation. Its production cost is easier to observe and estimate.
 
-IntentPair attempts to reduce this effort by predicting Same, Different, or Uncertain from keyword text alone and returning a short reason. SERP data is used to construct evaluation labels but is excluded from the LLM prompt to prevent leakage. Whole-site clustering, non-English keywords, content generation, search-volume forecasting, and production deployment are outside the project scope.
+I use IntentPair to reduce this effort by predicting Same, Different, or Uncertain from keyword text alone and returning a short reason. I use SERP data to construct evaluation labels but exclude it from the LLM prompt to prevent leakage. I place whole-site clustering, non-English keywords, content generation, search-volume forecasting, and production deployment outside the project scope.
 
 ## 3 Manual vs buy vs build options
 
-The business decision is not simply whether the LLM works. It is whether building IntentPair is preferable to the available manual, commercial, and simpler coded alternatives.
+My business decision is not simply whether the LLM works. I must decide whether building IntentPair is preferable to the available manual, commercial, and simpler coded alternatives.
 
 | Option | Direct cost | Human effort | Main benefit | Main trade-off |
 |---|---:|---:|---|---|
@@ -46,17 +46,28 @@ The business decision is not simply whether the LLM works. It is whether buildin
 | Build the lexical rule | Negligible compute cost | Depends on the review policy | Best primary macro-F1 in this experiment and fully transparent logic | No calibrated abstention signal was tested; performance benefits from the Jaccard-based sampling design |
 | Build IntentPair with an LLM | About $0.04 inference per 100 pairs under the project estimate | 3.13 hours under the evaluated policy | Produces a reason and identifies a subset of harder cases | Lower primary macro-F1 than the rule, third-party API dependency, and error cost can remove the labor saving |
 
-The experiment does not establish that the LLM is better than the lexical rule. On the binary Same versus Different view, they were practically tied: 0.744 macro-F1 for the LLM and 0.741 for the rule. The LLM's only demonstrated advantage was its selective confidence signal. However, I did not calibrate an equivalent distance-from-threshold or abstention mechanism for the lexical rule, so that advantage remains provisional.
+My experiment does not establish that the LLM is better than the lexical rule. On the binary Same versus Different view, they were practically tied: 0.744 macro-F1 for the LLM and 0.741 for the rule. The only LLM advantage I demonstrated was its selective confidence signal. However, I did not calibrate an equivalent distance-from-threshold or abstention mechanism for the lexical rule, so I treat that advantage as provisional.
 
-This result changes the original answer to "Why AI?" AI is not justified by classification accuracy because the simpler rule performed better on the primary metric. Continued use of the LLM would be justified only if a further pilot confirms that its confidence and explanations improve human review beyond what a calibrated rule can provide.
+This result changes my original answer to "Why AI?" I cannot justify AI by classification accuracy because the simpler rule performed better on the primary metric. I would continue using the LLM only if a further pilot confirms that its confidence and explanations improve human review beyond what a calibrated rule can provide.
 
-The build-versus-buy conclusion is therefore conditional. A commercial live-SERP tool is likely the stronger operational choice when the organisation can justify its subscription and needs fresh ranking evidence. A simple lexical rule is the strongest low-cost technical baseline. IntentPair is justified only as a small pilot when explainable pair-level triage is valuable and the organisation accepts the validation and monitoring burden.
+My build-versus-buy conclusion is therefore conditional. I would prefer a commercial live-SERP tool when the organisation can justify its subscription and needs fresh ranking evidence. I treat the simple lexical rule as the strongest low-cost technical baseline. I would justify IntentPair only as a small pilot when explainable pair-level triage is valuable and the organisation accepts the validation and monitoring burden.
+
+I made the following own-versus-rent decisions across the system stack:
+
+| Layer | Own or rent | Component | Reason for the decision |
+|---|---|---|---|
+| Interface and serving | Hybrid | I own the notebook-based pair input and result display, while I use Google Colab as the runtime | A notebook is sufficient for the course prototype and avoids the cost of building and hosting a separate application |
+| Orchestration | Own | I wrote the Python workflow for pair generation, model calls, threshold routing, caching, and result export | These steps encode the project-specific logic and must remain inspectable and reproducible |
+| Model | Rent | I call `openai/gpt-4o-mini` through OpenRouter | Renting a compact model keeps cost and implementation time low while allowing me to compare it with a non-AI baseline |
+| Data and retrieval | Hybrid | I own the keyword pairs, frozen labels, and snapshots, while I rent SERP collection from Serper.dev | The sampling and labelling rules define the experiment; live search collection is a commodity service, and the system does not require RAG |
+| Evaluation | Own | I wrote the dev/test split, baselines, metrics, threshold selection, drift audit, and ROI analysis | Evaluation choices determine whether the business and technical claims are valid, so I keep them under direct control |
+| Observability | Own | I preserve frozen caches, prediction files, model and prompt versions, and drift results | These artefacts let me reproduce the reported results and investigate changes in model behaviour or SERP labels |
 
 ## 4 Business targets and actual outcomes
 
 ### Workflow and labor outcome
 
-The evaluated v2 policy sends every Uncertain prediction to a writer and accepts every non-Uncertain prediction automatically. It abstained on 45 of 120 test pairs, giving a 37.5% review rate.
+In my evaluated v2 policy, I send every Uncertain prediction to a writer and accept every non-Uncertain prediction automatically. The system abstained on 45 of 120 test pairs, giving me a 37.5% review rate.
 
 | Policy | Cases sent to a writer | Review hours per 100 pairs | Hours saved | Labor and LLM cost per month | Saving before error costs |
 |---|---:|---:|---:|---:|---:|
@@ -64,11 +75,11 @@ The evaluated v2 policy sends every Uncertain prediction to a writer and accepts
 | Evaluated policy: review Uncertain only | 37.5% | 3.13 | 5.21 | $78.17 | $130.17 |
 | Safer pilot: review Uncertain and confirm every Same | 40.8% | 3.40 | 4.93 | $85.11 | $123.22 |
 
-The safer policy reflects the Problem Statement's responsible-use commitment to writer confirmation for every merge. The calculation conservatively assigns the full five-minute review time to Same confirmations. A production pilot should measure the actual confirmation time rather than assume it.
+My safer policy reflects the Problem Statement's responsible-use commitment to writer confirmation for every merge. I conservatively assign the full five-minute review time to Same confirmations. In a production pilot, I would measure the actual confirmation time rather than assume it.
 
 ### Error-aware return on investment
 
-The time-only saving is an upper bound because automated errors have business costs. On the evaluated test set, the system produced two definite errors among 57 answered pairs, both wrong splits. Applied to 100 monthly pairs using the observed coverage and class mix, this corresponds to approximately 1.67 wrong splits per month.
+I treat the time-only saving as an upper bound because automated errors have business costs. On my evaluated test set, the system produced two definite errors among 57 answered pairs, both wrong splits. When I apply the observed coverage and class mix to 100 monthly pairs, this corresponds to approximately 1.67 wrong splits per month.
 
 | Assumed cost of one wrong split | Monthly error cost | Net monthly saving under the evaluated policy |
 |---:|---:|---:|
@@ -79,19 +90,19 @@ The time-only saving is an upper bound because automated errors have business co
 | $100 | $166.67 | −$36.50 |
 | $150 | $250.00 | −$119.83 |
 
-At a $75 article cost, the evaluated policy saves only about $5 per month. Increasing volume does not solve this problem because labor savings and expected error costs both scale linearly with the number of pairs. Business viability depends mainly on reducing the error rate or limiting the cost of an incorrect content decision.
+At a $75 article cost, I estimate that the evaluated policy saves only about $5 per month. I cannot solve this problem by increasing volume because labor savings and expected error costs both scale linearly with the number of pairs. I therefore treat the error rate and the cost of an incorrect content decision as the main business levers.
 
-The error-cost estimate is itself uncertain. It extrapolates from two observed errors in a small test set and excludes lost traffic, management time, and the opportunity cost of delayed content. It should be treated as a sensitivity analysis, not as a forecast.
+My error-cost estimate is itself uncertain. I extrapolate from two observed errors in a small test set and exclude lost traffic, management time, and the opportunity cost of delayed content. I therefore present it as a sensitivity analysis, not as a forecast.
 
 ### Business outcome
 
-The project demonstrated a reduction in expected review effort, but it did not achieve the promised maximum of 25 manual checks per 100 pairs. It also did not establish that the LLM creates more value than the lexical rule. The appropriate business outcome is therefore a limited pilot decision, not a deployment decision.
+I demonstrated a reduction in expected review effort, but I did not achieve the promised maximum of 25 manual checks per 100 pairs. I also did not establish that the LLM creates more value than the lexical rule. I therefore make a limited pilot decision, not a deployment decision.
 
 ## 5 Technical design and evaluation
 
 ### System design
 
-The implementation contains the following components:
+My implementation contains the following components:
 
 - 82 B2B SaaS seed keywords.
 - 25 adversarial variants generated by a model different from the classifier.
@@ -101,21 +112,21 @@ The implementation contains the following components:
 - An LLM classifier using `openai/gpt-4o-mini` through OpenRouter.
 - Frozen caches, structured outputs, per-class metrics, confusion matrices, and ROI calculations.
 
-I own the pair generator, thresholds, prompt design, evaluation logic, logging, and business analysis. I rent LLM inference from OpenRouter and SERP collection from Serper.dev. This keeps implementation small and inexpensive, but transfers availability, pricing, and version-control risks to third parties.
+As summarised in the layer-by-layer analysis above, I own the project-specific workflow, data design, evaluation, and observability logic. I rent LLM inference from OpenRouter, SERP collection from Serper.dev, and the Colab runtime. This keeps my implementation small and inexpensive, but transfers availability, pricing, and version-control risks to third parties.
 
-The final implemented label rule was:
+I implemented the following final label rule:
 
 - overlap = 0 → Different
 - 0 < overlap < 0.3 → Uncertain
 - overlap ≥ 0.3 → Same
 
-This differs from the Week 3 Problem Statement, which described 0–1 shared URLs as Different and exactly two as Uncertain. The final rule treats any positive overlap below 0.3 as Uncertain. It was frozen before LLM evaluation and increases manual review in exchange for a more cautious boundary around low-overlap cases.
+This differs from my Week 3 Problem Statement, which described 0–1 shared URLs as Different and exactly two as Uncertain. My final rule treats any positive overlap below 0.3 as Uncertain. I froze it before LLM evaluation and accepted more manual review in exchange for a more cautious boundary around low-overlap cases.
 
 ### Leakage control and evaluation protocol
 
-SERP results never enter the LLM prompt. Labels and thresholds were frozen before LLM evaluation. The 20 development pairs were used for few-shot examples and threshold selection; the 120 test pairs were scored once. The majority and lexical baselines were evaluated on the same held-out test set, with baseline thresholds selected on development data.
+I never place SERP results in the LLM prompt. I froze labels and thresholds before LLM evaluation. I used the 20 development pairs for few-shot examples and threshold selection, and I scored the 120 test pairs once. I evaluated the majority and lexical baselines on the same held-out test set, with baseline thresholds selected on development data.
 
-The v1 prompt allowed Same, Different, or Uncertain, but the model predicted Uncertain zero times on both development and test data. The v2 design therefore forced a Same or Different choice and returned a separate confidence value. The system converted predictions below the development-selected threshold of 0.85 to Uncertain.
+My v1 prompt allowed Same, Different, or Uncertain, but the model predicted Uncertain zero times on both development and test data. I therefore redesigned v2 to force a Same or Different choice and return a separate confidence value. I converted predictions below the development-selected threshold of 0.85 to Uncertain.
 
 ### Evaluation results
 
@@ -127,7 +138,7 @@ The v1 prompt allowed Same, Different, or Uncertain, but the model predicted Unc
 | LLM v2 | 0.438 |
 | Pre-specified target | 0.700 |
 
-The v2 per-class results were:
+I obtained the following v2 per-class results:
 
 | Class | Precision | Recall | F1 | Support |
 |---|---:|---:|---:|---:|
@@ -135,9 +146,9 @@ The v2 per-class results were:
 | Uncertain | 0.244 | 0.379 | 0.297 | 29 |
 | Same | 1.000 | 0.154 | 0.267 | 26 |
 
-The Same precision of 1.000 is based on only four Same predictions. It is insufficient evidence of zero wrong-merge risk, particularly because Same recall was only 0.154.
+My Same precision of 1.000 is based on only four Same predictions. I do not treat this as sufficient evidence of zero wrong-merge risk, particularly because Same recall was only 0.154.
 
-On the 91 pairs with definite Same or Different ground truth, the LLM's forced binary macro-F1 was 0.744 and the re-tuned lexical rule scored 0.741. This 0.002 difference should be treated as a practical tie, not an LLM win.
+On the 91 pairs with definite Same or Different ground truth, I measured 0.744 forced-binary macro-F1 for the LLM and 0.741 for the re-tuned lexical rule. I treat this 0.002 difference as a practical tie, not an LLM win.
 
 The code, frozen assets, results, and notebook are available in the GitHub repository: `https://github.com/loginglog/intentpair-pe6201`.
 
@@ -154,29 +165,31 @@ The code, frozen assets, results, and notebook are available in the GitHub repos
 | 140-pair scope | Fits the course timeline and free SERP quota | Confidence intervals are wide and rare error directions are poorly estimated |
 | One-line LLM reason | Potentially supports writer trust and review | Reason quality and persuasiveness were not evaluated by users |
 
-The most important construct limitation concerns Uncertain. Ground-truth Uncertain means that observed SERP overlap fell inside a numeric band, while model confidence represents subjective certainty about semantic intent. These are different quantities. The v2 confidence threshold improved Uncertain F1 from 0 to 0.297 but reduced Same recall to 0.154. Testing other thresholds did not close the gap with the lexical baseline within the evaluated grid.
+I consider the definition of Uncertain to be the most important construct limitation. In my ground truth, Uncertain means that observed SERP overlap fell inside a numeric band, while model confidence represents subjective certainty about semantic intent. These are different quantities. My v2 confidence threshold improved Uncertain F1 from 0 to 0.297 but reduced Same recall to 0.154. When I tested other thresholds, none closed the gap with the lexical baseline within the evaluated grid.
 
-The submission-week drift audit provides a second limitation. On 2026-09-29, the system re-collected the 30 unique keywords contained in a fixed 20-pair audit sample. Four of 20 labels changed and overlap MAE was 0.030. Three moved from Uncertain to Different and one from Different to Uncertain; none moved to or from Same. The original labels remain frozen, so all evaluation and ROI results should be interpreted as specific to the original snapshot.
+I identified a second limitation through the submission-week drift audit. On 2026-09-29, I re-collected the 30 unique keywords contained in a fixed 20-pair audit sample. Four of 20 labels changed and overlap MAE was 0.030. Three moved from Uncertain to Different and one from Different to Uncertain; none moved to or from Same. I kept the original labels frozen, so I interpret all evaluation and ROI results as specific to the original snapshot.
 
 ## 7 Operational risks and governance
 
 | Risk | Business consequence | Control for a pilot |
 |---|---|---|
-| Wrong merge | Missed ranking opportunity, rewrite cost, and difficult-to-detect content failure | Require writer confirmation for every Same decision; monitor Same precision and recall |
-| Wrong split | Redundant article cost and cannibalisation | Track downstream article creation and rework; include error cost in ROI |
-| SERP and label drift | Decisions and measured performance may change over time | Repeat a fixed drift sample monthly and investigate movement involving Same |
-| Model or provider change | Fresh predictions may differ from the evaluated system | Version prompts, log the provider and model alias, preserve frozen responses, and revalidate before upgrades |
-| API availability and pricing | Workflow interruption or changing operating cost | Retain the lexical rule and manual process as fallbacks; monitor cost per pair |
-| Misleading explanation | A fluent reason may persuade a writer to accept a wrong decision | Present reasons as supporting evidence rather than proof; sample and review reason quality before deployment |
-| Automation bias | Writers may stop challenging confident outputs | Display confidence and source limitations; retain accountable human ownership of merge decisions |
+| Wrong merge | Missed ranking opportunity, rewrite cost, and difficult-to-detect content failure | I would require writer confirmation for every Same decision and monitor Same precision and recall |
+| Wrong split | Redundant article cost and cannibalisation | I would track downstream article creation and rework and include error cost in ROI |
+| SERP and label drift | Decisions and measured performance may change over time | I would repeat a fixed drift sample monthly and investigate movement involving Same |
+| Model or provider change | Fresh predictions may differ from the evaluated system | I version prompts, log the provider and model alias, preserve frozen responses, and would revalidate before upgrades |
+| API availability and pricing | Workflow interruption or changing operating cost | I retain the lexical rule and manual process as fallbacks and would monitor cost per pair |
+| Misleading explanation | A fluent reason may persuade a writer to accept a wrong decision | I would present reasons as supporting evidence rather than proof and review a sample before deployment |
+| Automation bias | Writers may stop challenging confident outputs | I would display confidence and source limitations and retain accountable human ownership of merge decisions |
 
-For a pilot, the SEO writer remains the decision owner. The system may prioritise work and automate low-risk routing, but it should not silently publish content or merge keyword groups. Logs should retain the input pair, model and prompt version, confidence, prediction, writer override, and final page decision. These records are necessary to measure actual time savings, override rates, wrong merges, wrong splits, and model drift.
+I treat a high-confidence Same prediction that is actually Different as the most serious silent failure. It can trigger a wrong merge without producing an immediate visible error; the resulting page may simply underperform until someone performs a later SERP or content audit. To detect it, I would require writer confirmation for every Same decision, periodically recheck a sample of high-confidence Same pairs against live SERPs, log writer overrides, and track pages that require later splitting or rewriting. The confidence threshold, frozen caches, and prediction logs are implemented controls in the current prototype. Writer confirmation and ongoing outcome monitoring are proposed pilot controls and were not validated as part of this experiment.
+
+For a pilot, I keep the SEO writer as the decision owner. I may use the system to prioritise work and automate low-risk routing, but I would not allow it to publish content or merge keyword groups silently. I would retain the input pair, model and prompt version, confidence, prediction, writer override, and final page decision in the logs. I need these records to measure actual time savings, override rates, wrong merges, wrong splits, and model drift.
 
 ## 8 Final recommendation
 
-IntentPair should proceed only as a small, monitored decision-support pilot. It should not replace manual SEO judgement or be presented as superior to the lexical rule.
+I recommend that IntentPair proceed only as a small, monitored decision-support pilot. I would not use it to replace manual SEO judgement or present it as superior to the lexical rule.
 
-The pilot workflow should be:
+I would use the following pilot workflow:
 
 1. Run the lexical rule and LLM on each candidate pair.
 2. Automatically accept only high-confidence Different decisions under a documented threshold.
@@ -184,11 +197,11 @@ The pilot workflow should be:
 4. Send every Uncertain decision to full SERP review.
 5. Record writer overrides, review time, article outcomes, and error costs.
 
-Before wider deployment, the project should meet four gates on a new holdout and real workflow sample:
+Before wider deployment, I would require the project to meet four gates on a new holdout and real workflow sample:
 
 - Demonstrate that selective automation reduces measured review time, not only estimated time.
 - Evaluate a calibrated abstention policy for the lexical rule and compare it fairly with LLM confidence.
 - Establish an acceptable upper bound for wrong-merge risk with substantially more Same predictions.
 - Show positive error-aware ROI under the organisation's actual content-production cost.
 
-If these gates are not met, the organisation should use either the lexical rule as a transparent prioritisation aid or continue manual review. The current evidence supports learning and a controlled pilot, but not production automation.
+If these gates are not met, I recommend using either the lexical rule as a transparent prioritisation aid or continuing manual review. I interpret the current evidence as support for learning and a controlled pilot, but not production automation.
