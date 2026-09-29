@@ -1,6 +1,6 @@
 # IntentPair Business and Technical Trade-off Analysis
 
-**Jiayao Ge · PE6201 Section B · End-of-Course Project**
+**Jiayao Ge · Section B · End-of-Course Project**
 
 **Initial SERP snapshot 2026-09-26 · Submission-week drift audit 2026-09-29**
 
