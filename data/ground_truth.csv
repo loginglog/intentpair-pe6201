@@ -1,0 +1,141 @@
+pair_id,kw_a,kw_b,jaccard,source,serp_overlap,truth,split
+0,Facebook email finder,Website email finder,0.5,sampled,0.0,Different,test
+1,Contact Finder,Facebook contact finder,0.6666666666666666,sampled,0.0,Different,test
+2,Email Finder,Instagram email finder,0.6666666666666666,sampled,0.0,Different,test
+3,Instagram email finder,Website email finder,0.5,sampled,0.0,Different,dev
+4,Instagram Influencer Finder,Instagram contact finder,0.5,sampled,0.0,Different,dev
+5,Linkedin Email Finder,Google email finder,0.5,sampled,0.1,Uncertain,test
+6,Linkedin Email Finder,Facebook email finder,0.5,sampled,0.0,Different,test
+7,Youtube Channel Finder,YouTube email finder,0.5,sampled,0.0,Different,test
+8,TikTok hashtag scraper,TikTok follower scraper,0.5,sampled,0.1,Uncertain,dev
+9,Contact Finder,LinkedIn contact finder,0.6666666666666666,sampled,0.1,Uncertain,test
+10,Instagram email scraper,Google email scraper,0.5,sampled,0.2,Uncertain,test
+11,Google Search Scraper,Facebook Search Scraper,0.5,sampled,0.1,Uncertain,test
+12,Facebook Ad Scraper,Facebook post scraper,0.5,sampled,0.1,Uncertain,test
+13,google maps scraper,Google Search Scraper,0.5,sampled,0.1111111111111111,Uncertain,test
+14,Facebook profile scraper,Facebook Search Scraper,0.5,sampled,0.3,Same,test
+15,Twitter media scraper,Twitter image scraper,0.5,sampled,0.4,Same,test
+16,Email Finder,TikTok email finder,0.6666666666666666,sampled,0.0,Different,test
+17,Facebook scraper,Facebook post scraper,0.6666666666666666,sampled,0.4,Same,dev
+18,Google email scraper,Google lead scraper,0.5,sampled,0.1,Uncertain,test
+19,Linkedin Email Finder,Twitter email finder,0.5,sampled,0.0,Different,test
+20,Linkedin Email Finder,Instagram email finder,0.5,sampled,0.0,Different,test
+21,Twitter email finder,Website email finder,0.5,sampled,0.0,Different,test
+22,Facebook contact finder,Instagram contact finder,0.5,sampled,0.0,Different,dev
+23,TikTok profile scraper,TikTok follower scraper,0.5,sampled,0.2,Uncertain,test
+24,Facebook profile scraper,TikTok profile scraper,0.5,sampled,0.1,Uncertain,test
+25,Linkedin Scraper,LinkedIn profile post scraper,0.5,sampled,0.3,Same,test
+26,Facebook automation tool,Instagram automation tool,0.5,sampled,0.0,Different,test
+27,Google email scraper,Google Search Scraper,0.5,sampled,0.1,Uncertain,test
+28,Twitter media scraper,Twitter profile scraper,0.5,sampled,0.7,Same,test
+29,Google email finder,YouTube email finder,0.5,sampled,0.0,Different,dev
+30,Twitter profile scraper,Facebook profile scraper,0.5,sampled,0.0,Different,dev
+31,TikTok email finder,YouTube email finder,0.5,sampled,0.1111111111111111,Uncertain,test
+32,TikTok hashtag scraper,TikTok hashtag generator,0.5,sampled,0.1,Uncertain,dev
+33,Email Finder,Linkedin Email Finder,0.6666666666666666,sampled,0.1,Uncertain,test
+34,Influencer Finder Tool,TikTok Influencer Finder,0.5,sampled,0.1,Uncertain,dev
+35,TikTok email finder,Website email finder,0.5,sampled,0.0,Different,test
+36,LinkedIn profile scraper,LinkedIn profile post scraper,0.75,sampled,0.3,Same,test
+37,Instagram post scraper,Instagram profile scraper,0.5,sampled,0.3,Same,dev
+38,Influencer Finder Tool,Instagram Influencer Finder,0.5,sampled,0.7,Same,dev
+39,TikTok profile scraper,Instagram profile scraper,0.5,sampled,0.1,Uncertain,test
+40,Facebook email finder,TikTok email finder,0.5,sampled,0.0,Different,test
+41,Google lead scraper,Google Search Scraper,0.5,sampled,0.1,Uncertain,test
+42,TikTok profile scraper,TikTok hashtag scraper,0.5,sampled,0.1,Uncertain,test
+43,LinkedIn post scraper,Facebook post scraper,0.5,sampled,0.0,Different,dev
+44,b2b Lead Generator,Lead Generator,0.6666666666666666,sampled,0.3,Same,test
+45,people finder,Facebook contact finder,0.25,sampled,0.0,Different,test
+46,TikTok Influencer Finder,Facebook email finder,0.2,sampled,0.0,Different,test
+47,Instagram post scraper,Instagram contact finder,0.2,sampled,0.1,Uncertain,test
+48,Linkedin Email Finder,people finder,0.25,sampled,0.0,Different,test
+49,Reverse Email Lookup,TikTok email finder,0.2,sampled,0.0,Different,test
+50,Twitter media scraper,Twitter profile search,0.2,sampled,0.0,Different,test
+51,Facebook Ad Scraper,Facebook contact finder,0.2,sampled,0.0,Different,test
+52,Decision Maker Finder,Website email finder,0.2,sampled,0.0,Different,test
+53,Creator Finder,Website email finder,0.25,sampled,0.0,Different,test
+54,Contact Finder,Company Finder,0.3333333333333333,sampled,0.0,Different,test
+55,Facebook profile scraper,Facebook automation tool,0.2,sampled,0.1,Uncertain,test
+56,Company Profile Generator,TikTok profile scraper,0.2,sampled,0.1,Uncertain,test
+57,Instagram lead generation tool,Instagram automation tool,0.4,sampled,0.0,Different,test
+58,Instagram contact finder,TikTok email finder,0.2,sampled,0.1,Uncertain,test
+59,people finder,Instagram email finder,0.25,sampled,0.0,Different,dev
+60,Facebook email finder,Facebook scraper,0.25,sampled,0.0,Different,test
+61,Influencer Analysis Tool,Instagram Influencer Finder,0.2,sampled,0.0,Different,test
+62,TikTok follower scraper,Facebook Search Scraper,0.2,sampled,0.1,Uncertain,test
+63,google maps scraper,Facebook Search Scraper,0.2,sampled,0.1111111111111111,Uncertain,test
+64,Reverse Email Lookup,Google email finder,0.2,sampled,0.1,Uncertain,test
+65,Google lead scraper,email scraper,0.25,sampled,0.0,Different,dev
+66,Local Business Finder,Facebook contact finder,0.2,sampled,0.0,Different,test
+67,Company Profile Generator,LinkedIn profile scraper,0.2,sampled,0.0,Different,test
+68,Contact Finder,Youtube Channel Finder,0.25,sampled,0.0,Different,test
+69,Local Business Finder,Google email finder,0.2,sampled,0.0,Different,dev
+70,Data Enrichment Tool,Candidate Sourcing Tool,0.2,sampled,0.0,Different,test
+71,LinkedIn job scraper,LinkedIn sales navigator scraper,0.4,sampled,0.0,Different,test
+72,AI Email Generator,Twitter email finder,0.2,sampled,0.0,Different,test
+73,Google maps email scraper,Instagram email scraper,0.4,sampled,0.0,Different,test
+74,LinkedIn profile post scraper,Facebook post scraper,0.4,sampled,0.1,Uncertain,test
+75,people finder,Website email finder,0.25,sampled,0.0,Different,test
+76,Youtube Channel Finder,Twitter email finder,0.2,sampled,0.0,Different,test
+77,Creator Finder,LinkedIn contact finder,0.25,sampled,0.0,Different,test
+78,people finder,Creator Finder,0.3333333333333333,sampled,0.0,Different,test
+79,Talent Finder,Instagram contact finder,0.25,sampled,0.0,Different,test
+80,Google Search Scraper,email scraper,0.25,sampled,0.0,Different,test
+81,Linkedin Email Finder,LinkedIn profile scraper,0.2,sampled,0.0,Different,test
+82,TikTok hashtag generator,TikTok follower scraper,0.2,sampled,0.1,Uncertain,dev
+83,Web contact scraper,TikTok follower scraper,0.2,sampled,0.0,Different,test
+84,TikTok email finder,TikTok hashtag scraper,0.2,sampled,0.1,Uncertain,test
+85,b2b Lead Generator,RAG Web Browser,0.0,sampled,0.0,Different,test
+86,Youtube Channel Finder,Google lead scraper,0.0,sampled,0.0,Different,test
+87,Facebook Ad Scraper,RAG Web Browser,0.0,sampled,0.0,Different,test
+88,Local Business Finder,Lead Generator,0.0,sampled,0.0,Different,test
+89,Youtube Channel Finder,Company Profile Generator,0.0,sampled,0.0,Different,test
+90,LinkedIn profile scraper,Website data extractor,0.0,sampled,0.0,Different,test
+91,Board Member Search,TikTok hashtag generator,0.0,sampled,0.0,Different,dev
+92,Linkedin Email Finder,RAG Web Browser,0.0,sampled,0.0,Different,test
+93,Instagram phone number scraper,Web contact scraper,0.16666666666666666,sampled,0.0,Different,test
+94,Search Resumes,Ad Library Scraper,0.0,sampled,0.0,Different,test
+95,Sales prospecting tools,Lead List Builder,0.0,sampled,0.0,Different,test
+96,google maps scraper,Website data extractor,0.0,sampled,0.0,Different,test
+97,Cofounder Matching,Sales prospecting tools,0.0,sampled,0.0,Different,test
+98,Reverse Email Lookup,Linkedin Scraper,0.0,sampled,0.0,Different,test
+99,Lead Enrichment Tool,Twitter image scraper,0.0,sampled,0.0,Different,test
+100,Lead List Builder,Facebook post scraper,0.0,sampled,0.1,Uncertain,dev
+101,Linkedin Email Finder,Instagram phone number scraper,0.0,sampled,0.0,Different,test
+102,b2b Lead Generator,Ad Library Scraper,0.0,sampled,0.1,Uncertain,test
+103,Talent Finder,TikTok follower scraper,0.0,sampled,0.0,Different,test
+104,Instagram email finder,TikTok hashtag generator,0.0,sampled,0.0,Different,test
+105,Lead Enrichment Tool,Google maps email scraper,0.0,sampled,0.0,Different,test
+106,Search Resumes,Local Business Finder,0.0,sampled,0.0,Different,test
+107,Google maps email scraper,TikTok profile scraper,0.16666666666666666,sampled,0.0,Different,test
+108,Lead List Builder,Instagram post scraper,0.0,sampled,0.1,Uncertain,test
+109,LinkedIn profile scraper,LinkedIn phone number finder,0.16666666666666666,sampled,0.0,Different,test
+110,Lead Scoring,TikTok hashtag scraper,0.0,sampled,0.0,Different,test
+111,Linkedin Email Finder,Business Owner Lookup,0.0,sampled,0.0,Different,test
+112,Lead Scoring,Instagram automation tool,0.0,sampled,0.0,Different,test
+113,Local Business Finder,LinkedIn sales navigator scraper,0.0,sampled,0.0,Different,test
+114,Instagram contact finder,LinkedIn profile post scraper,0.0,sampled,0.1,Uncertain,test
+115,Email Verifier,Email Verifier Pricing,0.6666666666666666,adversarial,0.4,Same,test
+116,Email Finder,How to Find Email Addresses,0.16666666666666666,adversarial,0.6,Same,test
+117,b2b Lead Generator,Best B2B Lead Generation Tools,0.3333333333333333,adversarial,0.3,Same,test
+118,Contact Finder,Contact Finder vs Email Finder,0.5,adversarial,0.2,Uncertain,test
+119,Data Enrichment Tool,Free Data Enrichment Tool,0.75,adversarial,0.4,Same,test
+120,Decision Maker Finder,How to Find Decision Makers,0.14285714285714285,adversarial,0.0,Different,dev
+121,Company Finder,Company Finder Alternative,0.6666666666666666,adversarial,0.0,Different,test
+122,Lead Scoring,Lead Scoring Best Practices,0.5,adversarial,0.3333333333333333,Same,test
+123,Linkedin Scraper,LinkedIn Scraper Free,0.6666666666666666,adversarial,0.5,Same,test
+124,Linkedin Email Finder,How to Find Email on LinkedIn,0.2857142857142857,adversarial,0.3,Same,test
+125,AI Copywriting,Best AI Copywriting Tools,0.5,adversarial,0.5,Same,dev
+126,AI Email Generator,AI Email Generator Pricing,0.75,adversarial,0.7,Same,test
+127,Lead Enrichment Tool,Lead Enrichment Tools Comparison,0.4,adversarial,0.3,Same,test
+128,Sales prospecting tools,Best Sales Prospecting Tools,0.75,adversarial,0.8,Same,test
+129,CEO Finder,How to Find CEO Contact Information,0.14285714285714285,adversarial,0.2,Uncertain,test
+130,people finder,People Finder Tool Free,0.5,adversarial,0.6,Same,test
+131,Buyer Intent Data Tool,Buyer Intent Data Tool Alternative,0.8,adversarial,0.6,Same,test
+132,LinkedIn profile scraper,How to Scrape LinkedIn Profiles,0.14285714285714285,adversarial,0.3,Same,test
+133,Instagram email scraper,Instagram Email Scraper Free,0.75,adversarial,0.9,Same,test
+134,Website email finder,How to Find Email Addresses on Websites,0.1111111111111111,adversarial,0.6,Same,test
+135,Web contact scraper,Best Web Contact Scraper Tools,0.6,adversarial,0.3,Same,test
+136,email scraper,Email Scraper vs Email Finder,0.5,adversarial,0.3,Same,test
+137,YouTube email finder,How to Find YouTube Channel Email,0.2857142857142857,adversarial,0.3333333333333333,Same,test
+138,Google Search Scraper,Free Google Search Scraper,0.75,adversarial,0.6,Same,test
+139,Facebook scraper,Facebook Scraper Pricing,0.6666666666666666,adversarial,0.3,Same,test

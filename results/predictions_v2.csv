@@ -1,0 +1,121 @@
+pair_id,kw_a,kw_b,jaccard,source,serp_overlap,truth,split,jac_syn,v2_label,v2_conf,v2_reason,pred_v2
+0,Facebook email finder,Website email finder,0.5,sampled,0.0,Different,test,0.5,Different,0.9,The keywords target different platforms and functionalities.,Different
+1,Contact Finder,Facebook contact finder,0.6666666666666666,sampled,0.0,Different,test,0.6666666666666666,Different,0.8,The first keyword is general while the second is specific to Facebook.,Uncertain
+2,Email Finder,Instagram email finder,0.6666666666666666,sampled,0.0,Different,test,0.6666666666666666,Different,0.9,The first keyword is general while the second is specific to Instagram.,Different
+5,Linkedin Email Finder,Google email finder,0.5,sampled,0.1,Uncertain,test,0.5,Different,0.9,"The platforms are distinct, leading to different user intents.",Different
+6,Linkedin Email Finder,Facebook email finder,0.5,sampled,0.0,Different,test,0.5,Different,0.9,"The platforms are distinct, leading to different user intents.",Different
+7,Youtube Channel Finder,YouTube email finder,0.5,sampled,0.0,Different,test,0.5,Different,0.9,The first focuses on finding channels while the second targets finding emails.,Different
+9,Contact Finder,LinkedIn contact finder,0.6666666666666666,sampled,0.1,Uncertain,test,0.6666666666666666,Different,0.9,"The addition of 'LinkedIn' specifies a particular platform, indicating different search intents.",Different
+10,Instagram email scraper,Google email scraper,0.5,sampled,0.2,Uncertain,test,0.5,Different,0.9,"The platforms are different, leading to distinct search intents.",Different
+11,Google Search Scraper,Facebook Search Scraper,0.5,sampled,0.1,Uncertain,test,0.5,Different,0.9,"The keywords refer to different platforms, indicating distinct search intents.",Different
+12,Facebook Ad Scraper,Facebook post scraper,0.5,sampled,0.1,Uncertain,test,0.5,Different,0.8,"The first keyword focuses on ads while the second is about posts, indicating different intents.",Uncertain
+13,google maps scraper,Google Search Scraper,0.5,sampled,0.1111111111111111,Uncertain,test,0.5,Different,0.9,The tools serve different purposes related to different platforms.,Different
+14,Facebook profile scraper,Facebook Search Scraper,0.5,sampled,0.3,Same,test,0.5,Different,0.8,The first focuses on profiles while the second implies a broader search functionality.,Uncertain
+15,Twitter media scraper,Twitter image scraper,0.5,sampled,0.4,Same,test,0.5,Same,0.8,Both keywords refer to tools for extracting media content from Twitter.,Uncertain
+16,Email Finder,TikTok email finder,0.6666666666666666,sampled,0.0,Different,test,0.6666666666666666,Different,0.9,The specific platform in Keyword B indicates a distinct search intent compared to the general term in Keyword A.,Different
+18,Google email scraper,Google lead scraper,0.5,sampled,0.1,Uncertain,test,0.5,Different,0.8,The terms imply different functionalities and target audiences.,Uncertain
+19,Linkedin Email Finder,Twitter email finder,0.5,sampled,0.0,Different,test,0.5,Different,0.9,"The platforms are distinct, leading to different user intents for email finding.",Different
+20,Linkedin Email Finder,Instagram email finder,0.5,sampled,0.0,Different,test,0.5,Different,0.9,"The platforms are different, leading to distinct user intents.",Different
+21,Twitter email finder,Website email finder,0.5,sampled,0.0,Different,test,0.5,Different,0.9,The keywords target different platforms and functionalities.,Different
+23,TikTok profile scraper,TikTok follower scraper,0.5,sampled,0.2,Uncertain,test,0.5,Different,0.8,The focus on profiles versus followers indicates distinct functionalities and user intents.,Uncertain
+24,Facebook profile scraper,TikTok profile scraper,0.5,sampled,0.1,Uncertain,test,0.5,Different,0.9,"The platforms are distinct, leading to different user intents.",Different
+25,Linkedin Scraper,LinkedIn profile post scraper,0.5,sampled,0.3,Same,test,0.5,Same,0.8,"Both keywords relate to extracting data from LinkedIn, focusing on similar functionalities.",Uncertain
+26,Facebook automation tool,Instagram automation tool,0.5,sampled,0.0,Different,test,0.5,Different,0.9,"The platforms are distinct, leading to different user needs and functionalities.",Different
+27,Google email scraper,Google Search Scraper,0.5,sampled,0.1,Uncertain,test,0.5,Different,0.8,The first focuses on extracting emails while the second is about scraping search results.,Uncertain
+28,Twitter media scraper,Twitter profile scraper,0.5,sampled,0.7,Same,test,0.5,Same,0.8,"Both keywords involve scraping data from Twitter, focusing on different aspects of the platform.",Uncertain
+31,TikTok email finder,YouTube email finder,0.5,sampled,0.1111111111111111,Uncertain,test,0.5,Different,0.9,"The platforms are distinct, leading to different user intents for email finding.",Different
+33,Email Finder,Linkedin Email Finder,0.6666666666666666,sampled,0.1,Uncertain,test,0.6666666666666666,Different,0.8,The first keyword is general while the second is specific to LinkedIn.,Uncertain
+35,TikTok email finder,Website email finder,0.5,sampled,0.0,Different,test,0.5,Different,0.9,The keywords target different platforms and functionalities.,Different
+36,LinkedIn profile scraper,LinkedIn profile post scraper,0.75,sampled,0.3,Same,test,0.75,Same,0.8,"Both keywords focus on scraping LinkedIn profiles, with a slight variation in the specific content type.",Uncertain
+39,TikTok profile scraper,Instagram profile scraper,0.5,sampled,0.1,Uncertain,test,0.5,Different,0.9,"The platforms are distinct, leading to different user intents.",Different
+40,Facebook email finder,TikTok email finder,0.5,sampled,0.0,Different,test,0.5,Different,0.9,"The platforms are different, indicating distinct user intents.",Different
+41,Google lead scraper,Google Search Scraper,0.5,sampled,0.1,Uncertain,test,0.5,Different,0.8,The first focuses on lead generation while the second is about scraping search results.,Uncertain
+42,TikTok profile scraper,TikTok hashtag scraper,0.5,sampled,0.1,Uncertain,test,0.5,Different,0.8,The tools serve different functions related to TikTok content.,Uncertain
+44,b2b Lead Generator,Lead Generator,0.6666666666666666,sampled,0.3,Same,test,0.6666666666666666,Different,0.8,The addition of 'B2B' specifies a distinct target audience compared to the general term 'Lead Generator'.,Uncertain
+45,people finder,Facebook contact finder,0.25,sampled,0.0,Different,test,0.25,Different,0.9,The first keyword is general while the second is specific to Facebook.,Different
+46,TikTok Influencer Finder,Facebook email finder,0.2,sampled,0.0,Different,test,0.2,Different,0.9,The keywords target different platforms and functionalities.,Different
+47,Instagram post scraper,Instagram contact finder,0.2,sampled,0.1,Uncertain,test,0.2,Different,0.9,The first focuses on extracting posts while the second targets contact information.,Different
+48,Linkedin Email Finder,people finder,0.25,sampled,0.0,Different,test,0.25,Different,0.8,"The first keyword is specific to LinkedIn, while the second is more general and can refer to various platforms.",Uncertain
+49,Reverse Email Lookup,TikTok email finder,0.2,sampled,0.0,Different,test,0.5,Different,0.9,The keywords target different platforms and functionalities.,Different
+50,Twitter media scraper,Twitter profile search,0.2,sampled,0.0,Different,test,0.2,Different,0.8,"The first focuses on extracting media, while the second is about searching profiles.",Uncertain
+51,Facebook Ad Scraper,Facebook contact finder,0.2,sampled,0.0,Different,test,0.2,Different,0.9,The first focuses on extracting ad data while the second targets contact information.,Different
+52,Decision Maker Finder,Website email finder,0.2,sampled,0.0,Different,test,0.2,Different,0.9,The keywords target different functionalities and user intents.,Different
+53,Creator Finder,Website email finder,0.25,sampled,0.0,Different,test,0.25,Different,0.9,The intents are distinct as one focuses on finding creators while the other targets email addresses.,Different
+54,Contact Finder,Company Finder,0.3333333333333333,sampled,0.0,Different,test,0.3333333333333333,Different,0.8,The keywords target different types of entities and user needs.,Uncertain
+55,Facebook profile scraper,Facebook automation tool,0.2,sampled,0.1,Uncertain,test,0.2,Different,0.8,The first focuses on scraping profiles while the second involves broader automation functionalities.,Uncertain
+56,Company Profile Generator,TikTok profile scraper,0.2,sampled,0.1,Uncertain,test,0.2,Different,0.9,The first keyword focuses on generating profiles while the second is about scraping existing profiles.,Different
+57,Instagram lead generation tool,Instagram automation tool,0.4,sampled,0.0,Different,test,0.4,Different,0.8,"Lead generation focuses on acquiring contacts, while automation tools emphasize streamlining processes.",Uncertain
+58,Instagram contact finder,TikTok email finder,0.2,sampled,0.1,Uncertain,test,0.2,Different,0.9,The platforms and specific functionalities differ significantly.,Different
+60,Facebook email finder,Facebook scraper,0.25,sampled,0.0,Different,test,0.25,Different,0.8,"The first keyword focuses on finding emails, while the second is about scraping content.",Uncertain
+61,Influencer Analysis Tool,Instagram Influencer Finder,0.2,sampled,0.0,Different,test,0.2,Different,0.8,"The first keyword is broader and could apply to various platforms, while the second is specific to Instagram.",Uncertain
+62,TikTok follower scraper,Facebook Search Scraper,0.2,sampled,0.1,Uncertain,test,0.2,Different,0.9,"The platforms and functionalities are distinct, indicating different user intents.",Different
+63,google maps scraper,Facebook Search Scraper,0.2,sampled,0.1111111111111111,Uncertain,test,0.2,Different,0.9,The keywords refer to different platforms and scraping functionalities.,Different
+64,Reverse Email Lookup,Google email finder,0.2,sampled,0.1,Uncertain,test,0.5,Different,0.8,The first focuses on reverse lookups while the second emphasizes finding emails specifically through Google.,Uncertain
+66,Local Business Finder,Facebook contact finder,0.2,sampled,0.0,Different,test,0.2,Different,0.9,The first keyword targets local businesses while the second focuses specifically on Facebook contacts.,Different
+67,Company Profile Generator,LinkedIn profile scraper,0.2,sampled,0.0,Different,test,0.2,Different,0.9,The first keyword focuses on creating profiles while the second is about extracting data from existing profiles.,Different
+68,Contact Finder,Youtube Channel Finder,0.25,sampled,0.0,Different,test,0.25,Different,0.9,The keywords target different platforms and functionalities.,Different
+70,Data Enrichment Tool,Candidate Sourcing Tool,0.2,sampled,0.0,Different,test,0.2,Different,0.8,The keywords target distinct functionalities in the recruitment process.,Uncertain
+71,LinkedIn job scraper,LinkedIn sales navigator scraper,0.4,sampled,0.0,Different,test,0.4,Different,0.8,The keywords target distinct functionalities within LinkedIn.,Uncertain
+72,AI Email Generator,Twitter email finder,0.2,sampled,0.0,Different,test,0.2,Different,0.9,"The first keyword focuses on generating emails using AI, while the second is about finding emails specifically on Twitter.",Different
+73,Google maps email scraper,Instagram email scraper,0.4,sampled,0.0,Different,test,0.4,Different,0.9,The keywords target different platforms and functionalities.,Different
+74,LinkedIn profile post scraper,Facebook post scraper,0.4,sampled,0.1,Uncertain,test,0.4,Different,0.9,"The platforms are different, leading to distinct user intents.",Different
+75,people finder,Website email finder,0.25,sampled,0.0,Different,test,0.25,Different,0.9,The intents are distinct as one focuses on locating individuals while the other targets finding email addresses on websites.,Different
+76,Youtube Channel Finder,Twitter email finder,0.2,sampled,0.0,Different,test,0.2,Different,0.9,The keywords target different platforms and functionalities.,Different
+77,Creator Finder,LinkedIn contact finder,0.25,sampled,0.0,Different,test,0.25,Different,0.9,"The first keyword focuses on finding creators, while the second is specific to LinkedIn contacts.",Different
+78,people finder,Creator Finder,0.3333333333333333,sampled,0.0,Different,test,0.3333333333333333,Different,0.8,The terms refer to distinct functionalities and target different user needs.,Uncertain
+79,Talent Finder,Instagram contact finder,0.25,sampled,0.0,Different,test,0.25,Different,0.9,The first keyword is broad while the second is specific to Instagram.,Different
+80,Google Search Scraper,email scraper,0.25,sampled,0.0,Different,test,0.25,Different,0.9,The keywords target distinct functionalities and user needs.,Different
+81,Linkedin Email Finder,LinkedIn profile scraper,0.2,sampled,0.0,Different,test,0.2,Different,0.9,"The first focuses on finding emails, while the second is about scraping profile data.",Different
+83,Web contact scraper,TikTok follower scraper,0.2,sampled,0.0,Different,test,0.2,Different,0.9,The keywords target different platforms and functionalities.,Different
+84,TikTok email finder,TikTok hashtag scraper,0.2,sampled,0.1,Uncertain,test,0.2,Different,0.9,"The first keyword focuses on finding emails, while the second is about scraping hashtags, indicating distinct intents.",Different
+85,b2b Lead Generator,RAG Web Browser,0.0,sampled,0.0,Different,test,0.0,Different,0.9,The keywords refer to distinct concepts and target different audiences.,Different
+86,Youtube Channel Finder,Google lead scraper,0.0,sampled,0.0,Different,test,0.0,Different,0.9,The keywords target different platforms and purposes.,Different
+87,Facebook Ad Scraper,RAG Web Browser,0.0,sampled,0.0,Different,test,0.0,Different,0.9,The keywords refer to distinct tools with different functionalities.,Different
+88,Local Business Finder,Lead Generator,0.0,sampled,0.0,Different,test,0.0,Different,0.8,The terms refer to distinct concepts with different functionalities.,Uncertain
+89,Youtube Channel Finder,Company Profile Generator,0.0,sampled,0.0,Different,test,0.0,Different,0.9,The keywords target different functionalities and user needs.,Different
+90,LinkedIn profile scraper,Website data extractor,0.0,sampled,0.0,Different,test,0.2,Different,0.9,"The first keyword is specific to LinkedIn, while the second is broader and applies to any website.",Different
+92,Linkedin Email Finder,RAG Web Browser,0.0,sampled,0.0,Different,test,0.0,Different,0.9,The keywords target distinct tools and functionalities with no overlapping intent.,Different
+93,Instagram phone number scraper,Web contact scraper,0.16666666666666666,sampled,0.0,Different,test,0.16666666666666666,Different,0.9,"The first keyword is specific to Instagram, while the second is more general to web contacts.",Different
+94,Search Resumes,Ad Library Scraper,0.0,sampled,0.0,Different,test,0.0,Different,0.9,The keywords target distinct functionalities and user needs.,Different
+95,Sales prospecting tools,Lead List Builder,0.0,sampled,0.0,Different,test,0.0,Same,0.8,Both keywords relate to tools for generating sales leads.,Uncertain
+96,google maps scraper,Website data extractor,0.0,sampled,0.0,Different,test,0.2,Different,0.8,"The first keyword is specific to Google Maps, while the second is more general to any website.",Uncertain
+97,Cofounder Matching,Sales prospecting tools,0.0,sampled,0.0,Different,test,0.0,Different,0.9,The intents are distinct as one focuses on finding cofounders while the other targets sales leads.,Different
+98,Reverse Email Lookup,Linkedin Scraper,0.0,sampled,0.0,Different,test,0.0,Different,0.9,"The first keyword focuses on finding information about an email, while the second is about extracting data from LinkedIn.",Different
+99,Lead Enrichment Tool,Twitter image scraper,0.0,sampled,0.0,Different,test,0.0,Different,0.9,The keywords refer to distinct functionalities and platforms.,Different
+101,Linkedin Email Finder,Instagram phone number scraper,0.0,sampled,0.0,Different,test,0.0,Different,0.9,The keywords target different platforms and types of contact information.,Different
+102,b2b Lead Generator,Ad Library Scraper,0.0,sampled,0.1,Uncertain,test,0.0,Different,0.9,The keywords target distinct tools and purposes in marketing.,Different
+103,Talent Finder,TikTok follower scraper,0.0,sampled,0.0,Different,test,0.0,Different,0.9,"The first keyword is broad and general, while the second is specific to TikTok followers.",Different
+104,Instagram email finder,TikTok hashtag generator,0.0,sampled,0.0,Different,test,0.0,Different,0.9,"The platforms and functionalities are distinct, targeting different user needs.",Different
+105,Lead Enrichment Tool,Google maps email scraper,0.0,sampled,0.0,Different,test,0.0,Different,0.9,"The first keyword focuses on lead enrichment, while the second is specific to scraping emails from Google Maps.",Different
+106,Search Resumes,Local Business Finder,0.0,sampled,0.0,Different,test,0.25,Different,0.9,The intents are distinct as one focuses on job searches and the other on locating businesses.,Different
+107,Google maps email scraper,TikTok profile scraper,0.16666666666666666,sampled,0.0,Different,test,0.16666666666666666,Different,0.9,The keywords target different platforms and functionalities.,Different
+108,Lead List Builder,Instagram post scraper,0.0,sampled,0.1,Uncertain,test,0.0,Different,0.9,"The first keyword focuses on lead generation tools, while the second is specific to Instagram content.",Different
+109,LinkedIn profile scraper,LinkedIn phone number finder,0.16666666666666666,sampled,0.0,Different,test,0.16666666666666666,Different,0.9,The first focuses on scraping profiles while the second targets finding phone numbers.,Different
+110,Lead Scoring,TikTok hashtag scraper,0.0,sampled,0.0,Different,test,0.0,Different,0.9,"The topics are unrelated, focusing on lead management versus social media data extraction.",Different
+111,Linkedin Email Finder,Business Owner Lookup,0.0,sampled,0.0,Different,test,0.2,Different,0.9,"The first keyword focuses on finding emails specifically, while the second is about identifying business owners.",Different
+112,Lead Scoring,Instagram automation tool,0.0,sampled,0.0,Different,test,0.0,Different,0.9,The keywords target distinct concepts and user needs.,Different
+113,Local Business Finder,LinkedIn sales navigator scraper,0.0,sampled,0.0,Different,test,0.0,Different,0.9,"The first keyword focuses on finding local businesses, while the second is about scraping LinkedIn for sales leads.",Different
+114,Instagram contact finder,LinkedIn profile post scraper,0.0,sampled,0.1,Uncertain,test,0.0,Different,0.9,The keywords target different platforms and functionalities.,Different
+115,Email Verifier,Email Verifier Pricing,0.6666666666666666,adversarial,0.4,Same,test,0.6666666666666666,Different,0.8,The first keyword focuses on functionality while the second emphasizes cost.,Uncertain
+116,Email Finder,How to Find Email Addresses,0.16666666666666666,adversarial,0.6,Same,test,0.16666666666666666,Different,0.8,One is a tool/service while the other is a guide/tutorial.,Uncertain
+117,b2b Lead Generator,Best B2B Lead Generation Tools,0.3333333333333333,adversarial,0.3,Same,test,0.3333333333333333,Different,0.8,One focuses on the process while the other emphasizes tools.,Uncertain
+118,Contact Finder,Contact Finder vs Email Finder,0.5,adversarial,0.2,Uncertain,test,0.5,Different,0.8,"The second keyword implies a comparison, suggesting different search intents.",Uncertain
+119,Data Enrichment Tool,Free Data Enrichment Tool,0.75,adversarial,0.4,Same,test,0.75,Same,0.9,"Both keywords refer to tools for data enrichment, with the second specifying a free option.",Same
+121,Company Finder,Company Finder Alternative,0.6666666666666666,adversarial,0.0,Different,test,0.6666666666666666,Same,0.8,"Both keywords focus on finding companies, with the second implying a variation of the first.",Uncertain
+122,Lead Scoring,Lead Scoring Best Practices,0.5,adversarial,0.3333333333333333,Same,test,0.5,Same,0.8,"Both keywords focus on the concept of lead scoring, with the second being a subset of the first.",Uncertain
+123,Linkedin Scraper,LinkedIn Scraper Free,0.6666666666666666,adversarial,0.5,Same,test,0.6666666666666666,Same,0.8,"Both keywords refer to tools for scraping LinkedIn data, with the second specifying a free option.",Uncertain
+124,Linkedin Email Finder,How to Find Email on LinkedIn,0.2857142857142857,adversarial,0.3,Same,test,0.2857142857142857,Different,0.8,One is a tool/service while the other is a guide/tutorial.,Uncertain
+126,AI Email Generator,AI Email Generator Pricing,0.75,adversarial,0.7,Same,test,0.75,Different,0.8,The first keyword focuses on functionality while the second emphasizes cost.,Uncertain
+127,Lead Enrichment Tool,Lead Enrichment Tools Comparison,0.4,adversarial,0.3,Same,test,0.75,Different,0.8,One keyword seeks a tool while the other seeks a comparison of tools.,Uncertain
+128,Sales prospecting tools,Best Sales Prospecting Tools,0.75,adversarial,0.8,Same,test,0.75,Same,0.9,"Both keywords focus on tools for sales prospecting, serving similar search intent.",Same
+129,CEO Finder,How to Find CEO Contact Information,0.14285714285714285,adversarial,0.2,Uncertain,test,0.14285714285714285,Different,0.8,"The first keyword implies a tool or service, while the second is a how-to guide.",Uncertain
+130,people finder,People Finder Tool Free,0.5,adversarial,0.6,Same,test,0.5,Same,0.8,"Both keywords relate to finding people, with the second being a specific type of the first.",Uncertain
+131,Buyer Intent Data Tool,Buyer Intent Data Tool Alternative,0.8,adversarial,0.6,Same,test,0.8,Same,0.8,"Both keywords refer to tools for analyzing buyer intent, with one being a variation of the other.",Uncertain
+132,LinkedIn profile scraper,How to Scrape LinkedIn Profiles,0.14285714285714285,adversarial,0.3,Same,test,0.14285714285714285,Different,0.8,One is a tool and the other is a tutorial.,Uncertain
+133,Instagram email scraper,Instagram Email Scraper Free,0.75,adversarial,0.9,Same,test,0.75,Same,0.9,Both keywords target the same tool with a slight variation in pricing.,Same
+134,Website email finder,How to Find Email Addresses on Websites,0.1111111111111111,adversarial,0.6,Same,test,0.1111111111111111,Different,0.9,One is a tool while the other is a guide.,Different
+135,Web contact scraper,Best Web Contact Scraper Tools,0.6,adversarial,0.3,Same,test,0.6,Different,0.8,One keyword is a general term while the other specifies tools.,Uncertain
+136,email scraper,Email Scraper vs Email Finder,0.5,adversarial,0.3,Same,test,0.5,Different,0.8,"The first keyword focuses on scraping emails, while the second compares two different tools.",Uncertain
+137,YouTube email finder,How to Find YouTube Channel Email,0.2857142857142857,adversarial,0.3333333333333333,Same,test,0.2857142857142857,Different,0.8,"The first keyword implies a tool or service, while the second is a guide or tutorial.",Uncertain
+138,Google Search Scraper,Free Google Search Scraper,0.75,adversarial,0.6,Same,test,0.75,Same,0.9,Both keywords refer to the same tool with a slight variation in pricing.,Same
+139,Facebook scraper,Facebook Scraper Pricing,0.6666666666666666,adversarial,0.3,Same,test,0.6666666666666666,Different,0.9,"The first keyword focuses on the tool itself, while the second is about its cost.",Different

@@ -1,0 +1,21 @@
+pair_id,kw_a,kw_b,serp_overlap,overlap_now,truth,label_now,label_moved
+108,Lead List Builder,Instagram post scraper,0.1,0.0,Uncertain,Different,True
+67,Company Profile Generator,LinkedIn profile scraper,0.0,0.0,Different,Different,False
+31,TikTok email finder,YouTube email finder,0.1111111111111111,0.1111111111111111,Uncertain,Uncertain,False
+119,Data Enrichment Tool,Free Data Enrichment Tool,0.4,0.3,Same,Same,False
+42,TikTok profile scraper,TikTok hashtag scraper,0.1,0.0,Uncertain,Different,True
+12,Facebook Ad Scraper,Facebook post scraper,0.1,0.1,Uncertain,Uncertain,False
+81,Linkedin Email Finder,LinkedIn profile scraper,0.0,0.0,Different,Different,False
+69,Local Business Finder,Google email finder,0.0,0.0,Different,Different,False
+104,Instagram email finder,TikTok hashtag generator,0.0,0.1,Different,Uncertain,True
+109,LinkedIn profile scraper,LinkedIn phone number finder,0.0,0.0,Different,Different,False
+113,Local Business Finder,LinkedIn sales navigator scraper,0.0,0.0,Different,Different,False
+56,Company Profile Generator,TikTok profile scraper,0.1,0.0,Uncertain,Different,True
+66,Local Business Finder,Facebook contact finder,0.0,0.0,Different,Different,False
+19,Linkedin Email Finder,Twitter email finder,0.0,0.0,Different,Different,False
+132,LinkedIn profile scraper,How to Scrape LinkedIn Profiles,0.3,0.4,Same,Same,False
+78,people finder,Creator Finder,0.0,0.0,Different,Different,False
+11,Google Search Scraper,Facebook Search Scraper,0.1,0.1,Uncertain,Uncertain,False
+27,Google email scraper,Google Search Scraper,0.1,0.1,Uncertain,Uncertain,False
+127,Lead Enrichment Tool,Lead Enrichment Tools Comparison,0.3,0.3,Same,Same,False
+110,Lead Scoring,TikTok hashtag scraper,0.0,0.0,Different,Different,False
