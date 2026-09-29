@@ -2,8 +2,6 @@
 
 **Jiayao Ge · Section B · End-of-Course Project**
 
-**Initial SERP snapshot 2026-09-26 · Submission-week drift audit 2026-09-29**
-
 ## 1 Executive decision
 
 IntentPair was designed to help an SEO writer decide whether two similar keywords should be served by one page or two. The project tested whether a low-cost LLM could replace most five-minute manual SERP comparisons while routing uncertain cases to a writer.
