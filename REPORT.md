@@ -2,12 +2,10 @@
 
 **Jiayao Ge · PE6201 Section B · End-of-Course Project · SERP snapshot 2026-09-26 · submission-week drift audit 2026-09-29**
 
----
-
 ## 0. Headline
 
 I built IntentPair to test one claim: that an LLM, given only two keyword strings, can decide
-whether Google would serve them with largely the same top-10 results — and therefore whether an
+whether Google would serve them with largely the same top-10 results, and therefore whether an
 SEO team should write one page or two.
 
 **The claim failed on my primary metric, which was pre-specified in the Problem Statement.**
