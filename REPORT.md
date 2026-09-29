@@ -4,9 +4,7 @@
 
 ## 1 Executive decision
 
-IntentPair was designed to help an SEO writer decide whether two similar keywords should be served by one page or two. The project tested whether a low-cost LLM could replace most five-minute manual SERP comparisons while routing uncertain cases to a writer.
-
-The system should **not** be deployed as an unconditional classifier. It missed both its pre-specified technical target and its business target:
+IntentPair was designed to help an SEO writer decide whether two similar keywords should be served by one page or two. The project tested whether a low-cost LLM could replace most five-minute manual SERP comparisons while routing uncertain cases to a writer. The system should **not** be deployed as an unconditional classifier. It missed both its pre-specified technical target and its business target:
 
 | Measure | Target in the Problem Statement | Actual result | Outcome |
 |---|---:|---:|---|
