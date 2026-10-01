@@ -1,1 +1,11 @@
-{"fetched_at": "2026-09-29T12:18:47.131221+00:00", "location": {"gl": "sg", "hl": "en"}}
+{
+  "snapshot_created_on": "2026-09-26",
+  "timestamp_precision": "date",
+  "location": {
+    "gl": "sg",
+    "hl": "en"
+  },
+  "keywords_cached": 107,
+  "freeze_policy": "This initial SERP snapshot is frozen and must not be overwritten by drift or reproduction runs.",
+  "timestamp_note": "The exact original query time was not retained. A legacy fetched_at value was produced by a cached notebook rerun and was not used as the snapshot time."
+}

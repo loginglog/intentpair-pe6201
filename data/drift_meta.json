@@ -1,0 +1,12 @@
+{
+  "collected_on": "2026-09-29",
+  "timestamp_precision": "date",
+  "location": {
+    "gl": "sg",
+    "hl": "en"
+  },
+  "random_seed": 42,
+  "pair_count": 20,
+  "unique_keyword_count": 30,
+  "purpose": "Submission-week drift audit. These records do not overwrite the frozen initial snapshot or ground-truth labels."
+}
