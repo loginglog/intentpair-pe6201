@@ -36,7 +36,7 @@ The final rule was overlap = 0 for Different, 0 < overlap < 0.3 for Uncertain, a
 | System | Test macro-F1 |
 |---|---:|
 | Majority baseline | 0.234 |
-| Tuned lexical rule | **0.591** |
+| Tuned lexical rule | 0.591 |
 | LLM v1 | 0.398 |
 | LLM v2 | 0.438 |
 | Pre-specified target | 0.700 |
@@ -63,4 +63,4 @@ The most serious silent failure is a high-confidence Same that is actually Diffe
 
 I recommend a small monitored pilot, not production automation. Before wider use, I would: compare LLM confidence with a calibrated lexical-rule abstention policy; test on a larger repeated-snapshot holdout; measure actual review time rather than assumed five-minute checks; and calculate ROI using real rewrite and content-production costs. Deployment should proceed only if selective automation lowers measured effort, the upper bound on wrong-merge risk is acceptable, and error-aware ROI remains positive. Otherwise, the lexical rule should remain a transparent prioritisation aid and the final decision should stay manual.
 
-Code, data, evaluation outputs, and reproduction instructions are available at `https://github.com/loginglog/intentpair-pe6201`.
+Repository URL: `https://github.com/loginglog/intentpair-pe6201`.
